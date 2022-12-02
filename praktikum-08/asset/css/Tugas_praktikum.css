@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  margin: 0;
+}
+
+nav {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  width: 20vh;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#content {
+  display: flex;
+  flex: 1;
+}
+
+#content > article {
+  order: 1;
+  flex: 1;
+}
+
+#content > aside {
+  order: 2;
+  flex: 1;
+  background-color: aqua;
+}
+
+#content > article,
+#content aside {
+  flex: 1 0 20vw;
+}
+#main > header,
+#main > footer {
+  background-color: khaki;
+  height: 20vh;
+}
+/* #main > nav,
+#main > aside {
+  flex: 0 0 20vw;
+}
+
+#main > nav {
+  order: 1;
+  background-color: pink;
+}
+
+#main > article {
+  flex: 1;
+  order: 2;
+}
+
+#main > aside {
+  order: 3;
+  background-color: cyan;
+}
+
+header,
+footer {
+  float: right;
+  background: khaki;
+  height: 20vh;
+} */
