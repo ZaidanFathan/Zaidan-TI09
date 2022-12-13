@@ -21,12 +21,12 @@ function computerChoice(e) {
     setTimeout(() => alert("You win"), 100);
   }
 
-  // jika pilihan komputer yg menang
+  // Jika komputer yang menang
   if (
+    (e.target.innerText.trim() == "Scissors" ** result.innerHTML) == "Rock" ||
     (e.target.innerText.trim() == "Rock" && result.innerHTML == "Paper") ||
-    (e.target.innerText.trim() == "Paper" && result.innerHTML == "Scissors") ||
-    (e.target.innerText.trim() == "Scissors" && result.innerHTML == "Rock")
+    (e.target.innerText.trim() == "Paper" && result.innerHTML == "Scissors")
   ) {
-    setTimeout(() => alert("Computer wins"), 100);
+    setTimeout(() => alert("Kamu kalah"), 100);
   }
 }
